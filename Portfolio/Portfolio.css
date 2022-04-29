@@ -1,0 +1,382 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-image: url('file:/D:/Photos/bg3.jfif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+html{
+  scroll-behavior: smooth;
+}
+.home{
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.menu{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+.menu ul{
+  display: inline-flex;
+  list-style: none;
+}
+.menu ul li{
+  width: 120px;
+  margin: 15px;
+  padding: 5px;
+} 
+.menu li a{
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100px;
+  margin: 15px;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #f1f1f1;
+}
+li a:hover{
+  background-color: #0052cc;
+  border-radius: 10px;
+}
+.content{
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 250px;
+	width: 300px;
+  font-size: x-large;
+	padding: 20px;
+	/* margin: 2px; */
+}
+span{
+  font-weight: 500px;
+  color: #0052cc;
+}
+.btn{
+  padding: 10px 25px;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: .6s;
+  font-style: italic;
+  font-size: small;
+}
+.contact{
+  position: absolute;
+	top: 65%;
+	left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn:hover{
+  background-color: #0052cc;
+  cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: large;
+}
+.fixed-menu{
+  display: block;
+}
+.about{
+  width: 100%;
+  padding: 100px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.about-text{
+  width: 800px;
+  color: white;
+  margin: 100px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+.resume{
+  margin: 2px;
+  padding: 10px 35px;
+  background-color: #f1f1f1;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: .6s;
+  font-style: italic;
+  font-size: small;
+}
+.resume:hover{
+  background-color: #0052cc;
+  color:#f1f1f1;
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 30px;
+  font-size: large;
+}
+
+.Skills-section{
+  height: 100vh;
+  width: 100%;
+}
+.skills-edu{
+  font-size: large;
+}
+.flip-box{
+  padding: 40px 400px;
+  background-color: transparent;
+  width: 200px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+.flip-box-content{
+  position: relative;
+  height: 500px;
+  width: 500px;
+  text-align: center;
+  transition: transform .8s;
+  transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-content{
+  transform: rotateY(180deg);
+}
+.education, .skills{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.education{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+.flex-container{
+  background-color: white;
+  margin: 40px;
+  height: 350px;
+  width: 400px;
+  border: 2px solid white;
+  border-radius: 42px;
+  color: #0052cc;
+}
+.college{
+  margin: 25px;
+  color: #0052cc;
+  text-align: center;
+}
+.flex-container h1, .flex-container h4{
+  color:black;
+}
+.rounded{
+  border-top: 4px solid #0052cc;
+  border-radius: 5px;
+  width: 360px;
+}
+.ruler{
+  margin: 20px;
+}
+.skills{
+  background-color: #0052cc;
+  color: white;
+  transform: rotateY(180deg);
+}
+img{
+  margin: 8px;
+  padding: 2px;
+  height: 90px;
+  width: 150px;
+}
+.contact-section{
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  
+}
+.contact-section h1{
+  color: white;
+  margin: 20px 200px 0px ;
+  padding: 6px;
+  
+}
+.contact-container{
+  padding: 5px;
+  margin-left: 160px;
+  transform: translate(30%, 10%);
+}
+.contact-container img{
+  border-radius: 50%;
+  height: 90px;
+  width: 100px;
+}
+.contact-container li{
+  list-style: none;
+}
+.github, .phone{
+  background-color: #0052cc;
+}
+.github, .phone, .linkedin, .mail:hover{
+  cursor: pointer;
+}
+.mailcontainer{
+  position: relative;
+  width: 80px;
+}
+.mail{
+  display: block;
+  width: 100%;
+}
+.mailoverlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+.mailcontainer:hover .mailoverlay{
+  border-radius: 100%;
+  width: 200%;
+}
+.mailid{
+  color: #0052cc;
+  font-size: 13px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.phonecontainer {
+  position: relative;
+  width: 50%;
+}
+
+.phone {
+  display: block;
+  height: 90px;
+  width: 100px;
+}
+
+.phoneoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 95px;
+  width: 120px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f1f1f1;
+}
+
+.phonecontainer:hover .phoneoverlay {
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.phno {
+  color: #0052cc;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.linkedincontainer {
+  position: relative;
+  width: 50%;
+}
+
+.linkedin{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.linkedinoverlay {
+  position: absolute;
+  bottom: 100%;
+  left: -15%;
+  right: 50%;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  width: 60%;
+  height:0;
+  transition: .5s ease;
+}
+
+.linkedincontainer:hover .linkedinoverlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.liprofile{
+  color: #0052cc;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.gitcontainer {
+  position: relative;
+  width: 50%;
+}
+
+.github{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.gitoverlay {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: -15%;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.gitcontainer:hover .gitoverlay {
+  width: 55%;
+  left: 0;
+}
+
+.gitprofile {
+  color: #0052cc;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
