@@ -4,7 +4,7 @@
 }
 
 body{
-  background-image: url('.images/bg.jfif');
+  background-image: url('images/bg.jfif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
